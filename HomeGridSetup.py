@@ -69,7 +69,7 @@ class HomeGridSetup:
             bg=constColorDict.get("discordDark"),
             fg=constColorDict.get("discordText"),
             anchor="w",
-            command=addReminder
+            command=lambda: addReminder(self.__groupContainer)
         )
         addReminderButton.grid(
             row=1,
